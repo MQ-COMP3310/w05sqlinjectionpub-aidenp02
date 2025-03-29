@@ -56,7 +56,7 @@ public class App {
             String line;
             int i = 1;
             while ((line = br.readLine()) != null) {
-                System.out.println(line);
+                logger.log(Level.INFO, line);
                 wordleDatabaseConnection.addValidWord(i, line);
                 i++;
             }
